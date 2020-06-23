@@ -49,4 +49,3 @@ if __name__ == '__main__':
         print(primeCount)
         k -= 1
 
-
