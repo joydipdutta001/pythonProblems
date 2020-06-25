@@ -6,10 +6,10 @@ def LCS2(s1, s2, n1, n2):
     (str, str, int, int) -> (int, 2D-array) """
 
     # Initializing the matrix
-    Matrix = numpy.zeros((n1+1 , n2+1))
+    Matrix = numpy.zeros((n1 , n2))
 
-    for i in range(1, n1+1):
-        for j in range(1, n2+1):
+    for i in range(1, n1):
+        for j in range(1, n2):
             if s1[i-1] == s2[j-1]:
                 Matrix[i][j] = Matrix[i-1][j-1] + 1
             if s1[i-1] != s2[j-1]:
@@ -43,5 +43,5 @@ if __name__ == '__main__':
 
     LCS_length, Matrix = LCS2(s1, s2, n1, n2)
     sequence = printSubsequence(Matrix, s1, s2, n1, n2, [])
-    print('Length of LCS:', LCS_length)
-    print('LCS:', sequence)
+    print(LCS_length)
+    # print('LCS:', sequence)

@@ -56,5 +56,5 @@ if __name__ == '__main__':
     edit_distance, Matrix = EditDistance(s1, s2)
     top, bottom = OptimalAlignment(Matrix, s1, s2, [], [], len(s1), len(s2))
 
-    print(f'Editing distance : {edit_distance}')
-    print(f"Optimal alignment:\n{top}\n{bottom}")
+    print(edit_distance)
+    # print(f"Optimal alignment:\n{top}\n{bottom}")

@@ -51,6 +51,6 @@ if __name__ == '__main__':
     # s1, s2, s3 = [int(i) for i in s1.split()], [int(i) for i in s2.split()],  [int(i) for i in s3.split()]
 
     LCS_length, Matrix = LCS3(s1, s2, s3, n1, n2, n3)
-    print('Length of LCS:', LCS_length)
-    sequence = printSubsequence(Matrix, s1, s2, s3, n1, n2, n3, [])
-    print('LCS:', sequence)
+    print(LCS_length)
+    # sequence = printSubsequence(Matrix, s1, s2, s3, n1, n2, n3, [])
+    # print('LCS:', sequence)
